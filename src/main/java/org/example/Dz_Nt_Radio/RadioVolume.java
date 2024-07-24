@@ -12,7 +12,7 @@ public class RadioVolume {
         if (newCurrentVolumeLvl < 0){
             return;
         }
-        if (newCurrentVolumeLvl > 101){
+        if (newCurrentVolumeLvl >= 101){
             return;
         }
 
