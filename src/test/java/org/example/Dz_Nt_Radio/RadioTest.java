@@ -23,7 +23,7 @@ public class RadioTest {
 
         Radio radio = new Radio();
 
-        radio.setCurrentRadioStation(9);
+        radio.setCurrentRadioStation(10);
         radio.pushButtonNext();
 
         int expected = 0;
@@ -236,6 +236,13 @@ public class RadioTest {
         Assertions.assertEquals(expected, acctual);
 
 
+    }
+
+    @Test
+    public void getCurrentCountRadio(){
+        Radio radio = new Radio(-1);
+
+        Assertions.assertEquals(0, radio.getCountRadio());
     }
 
 
